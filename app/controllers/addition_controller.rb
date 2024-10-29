@@ -9,6 +9,6 @@ class AdditionController < ApplicationController
     @result = @first_num + @second_num
 
 
-    render({ :template => "addition_template/add_results" })
+    render({ :template => "addition_templates/add_results" })
   end
 end

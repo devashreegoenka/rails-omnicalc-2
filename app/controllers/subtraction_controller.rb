@@ -1,4 +1,4 @@
-class subtraction_controller < ApplicationController
+class SubtractionController < ApplicationController
   def subtraction_form
     render({ :template => "subtraction_templates/subtraction_form" })
   end
@@ -8,6 +8,6 @@ class subtraction_controller < ApplicationController
     @second_num = params.fetch("second_number").to_f
     @result = @second_num - @first_num 
 
-    render({ :template => "subtraction_templates/subt_results" })
+    render({ :template => "subtraction_templates/sub_results" })
   end
 end
